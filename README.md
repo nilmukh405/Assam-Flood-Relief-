@@ -1,6 +1,6 @@
 # Assam-Flood-Relief
 
-A total of 6,27,874 people, in 506 villages, across 11 districts of the state, continue to suffer due to the flood. People of Assam are in urgent need of help. The floods have affected innumerable lives. Many have lost their lives, loved ones, homes, and livelihood. In this crisis situation, the people of the region are seeking for help.
+Every year, around 29.70 lakh people are affected due to flood in over 2540 villages across 30 districts in Assam. Many people lose their belongings, homes and even lives because of flood. In this time of crisis, we need to provide them with help to slowly restore their lives.
 
 
 Website Link : https://nilmukh405.github.io/Assam-Flood-Relief-/
