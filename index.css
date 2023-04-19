@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url("bg-photo.png");
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.h1 {
+  font-family: 'Merriweather', serif;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  text-align: center;
+  color:white;
+  z-index: 5;
+  font-size: 24px;
+  transition: transform 1s;
+}
+
+.h1:hover {
+  transform: scale(1.5);
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  z-index: 2;
+  background-color: #2C3333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 15px;
+}
+
+.nav-logo {
+  background-image: url("https://internship.thesparksfoundation.info/assests/img/logo.png");
+  background-size: cover;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 8px;
+  transition: transform .5s;
+}  
+
+.nav-logo:hover {
+  transform: scale(1.15);
+}
+
+.nav-header {
+  display: flex;
+}
+
+.nav-heading {
+  font-size: 25px;
+  color: #fff;
+  padding: 10px 0 0 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  width: 300px;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #fff;
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* about */
+.about {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8F9FD;
+}
+
+.about-heading {
+  width: 50vw;
+  height: 50vh;
+}
+
+/* donate */
+.btn, #submit {
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #2C3333;
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover, #submit:hover {
+  background-color: #fff;
+  color: #010712;
+}
+
+/*contact form*/
+.contact {
+  display: flex;
+  height: 100vh;
+  margin: 25px;
+  background-color: #FCFDFD;
+  padding-top: 70px;
+}
+
+.right-col {
+  width: 60%;
+  height: 86.5%;
+  background-image: url("contact.png");
+  background-size:auto ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-col {
+  width: 50%;
+  height: 80%;
+  background-color: #FCFDFD;
+  margin: 25px;
+}
+
+.left-col>h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #818386;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  outline: none;
+}
+
+h1 {
+  color: #3F444C;
+  text-transform: uppercase;
+}
+
+/* footer */
+.connect {
+  padding: 20px;
+  border-top: 2px solid #576F72;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.foot-head {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  column-gap: 25px;
+  justify-content: center;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #010712;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: .25s;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+}
+
+.icon:hover i {
+  animation: shake .25s;
+}
+
+.icon_google:hover {
+  background-image: radial-gradient(circle at 30% 107%, #3CCF4E 0%, #3CCF4E 5%, #0096FF 45%, #FFEA11 60%, #E64848 90%);
+  outline-color: black;
+}
+
+.icon_link:hover {
+  background-color: #1F4690;
+  outline-color: #1C3879;
+}
+
+.icon_tweet:hover {
+  background-color: #3AB4F2;
+  outline-color: #0096FF;
+}
+
+.icon_git:hover {
+  background-color: #E8F9FD;
+  outline-color: #000000;
+}
+
+.icon_insta:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fdf497 45%, #d6249f 60%, #285aeb 90%);
+  outline-color: #a02d76;
+}
+
+@keyframes shake {
+  10%{transform: rotate(15deg);}
+  20%{transform: rotate(-15deg);}
+  30%{transform: rotate(15deg);}
+  40%{transform: rotate(-15deg);}
+}

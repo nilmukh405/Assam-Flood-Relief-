@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0e547c069f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Flood</title>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="navbar" id="nav">
+                <div class="nav-header" id="nav-header">
+                    <div class="nav-logo"> </div>
+                    <div class="nav-heading">Assam Flood Relief</div>
+                </div>
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h1">
+                <h1>Giving little can help a lot.</h1>
+                <h1>They need you.</h1>
+            </div>
+            <div class="banner">
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="about" id="about">
+            <div class="about-heading">
+                <h1>About</h1>
+                <div class="about-para">
+                    <p>A total of 6,27,874 people, in 506 villages, across 11 districts of the state, continue to suffer
+                        due
+                        to the flood. People of Assam are in urgent need of help. The floods have affected innumerable
+                        lives. Many have lost their lives, loved ones, homes, and livelihood. In this crisis situation,
+                        the
+                        people of the region are seeking for help.
+                    </p>
+                </div>
+                <div class="donate" id="donate">
+                    <button class="btn" onclick="PaymentGateway()">Donate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contact" id="contact">
+            <div class="left-col">
+                <h1>Contact Us</h1>
+
+                <form id="contact-us">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Your full name" required />
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="Your email address" required />
+                    <label for="message">Message</label>
+                    <textarea rows="6" placeholder="Your message" id="message" required></textarea>
+                    <button type="submit" id="submit">Send</button>
+                </form>
+            </div>
+            <div class="right-col"></div>
+        </div>
+    </section>
+
+    <section>
+        <footer class="connect">
+            <div class="foot-head">
+                Get connected with us on social networks:
+            </div>
+            <div class="icons">
+                <a class="icon icon_google" href="mailto:mshmeghna14@gmail.com"><i class="fa-brands fa-google"></i></a>
+                <a class="icon icon_link" href="https://www.linkedin.com/in/meghna-singha-hazari-155043205/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="icon icon_tweet" href="https://twitter.com/mshmeghna"><i class="fa-brands fa-twitter"></i></a>
+                <a class="icon icon_git" href="https://github.com/Meghnaaash"><i class="fa-brands fa-github"></i></a>
+                <a class="icon icon_insta" href="https://www.instagram.com/meghnaaa.s.h/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                © 2022 Copyright
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        function PaymentGateway() {
+            window.location.href="https://rzp.io/l/dXc1lkre0k";
+        }
+    </script>
+
+</body>
+
+</html>
